@@ -18,4 +18,91 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+    <xs:element name="listarCategoriasRequest"/>
+  	<xs:element name="listarCategoriasResponse">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="categoria" maxOccurs="unbounded">
+          	<xs:complexType>
+            	<xs:sequence>
+                  <xs:element name="categoriaId" type="xs:int"/>
+                  <xs:element name="nombre" type="xs:string"/>
+                </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+        </xs:sequence>  
+      </xs:complexType>
+    </xs:element>  
+    <xs:element name="agregarProductoRequest">
+    	<xs:complexType>
+        	<xs:sequence>
+            	<xs:element name="productoId" type="xs:int"/>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="descripcion" type="xs:string"/>
+                <xs:element name="precio" type="xs:decimal"/>
+                <xs:element name="categoriaId" type="xs:int"/>
+            </xs:sequence>  
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="agregarProductoResponse">
+     	<xs:complexType>
+        	<xs:sequence>
+            	<xs:element name="respuesta" type="xs:boolean"/>
+            </xs:sequence>  
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="buscarProductosRequest"/>
+    <xs:element name="buscarProductosResponse"> 
+        <xs:complexType>
+        	<xs:sequence>
+                <xs:element name="productoId" type="xs:int"/>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="descripcion" type="xs:string"/>
+                <xs:element name="precio" type="xs:decimal"/>
+            </xs:sequence> 
+        </xs:complexType> 
+    </xs:element>
+    <xs:element name="buscarProductosCategoriaRequest"/>
+  	<xs:element name="buscarProductosCategoriaResponse">
+     	<xs:complexType>
+        	<xs:sequence>
+                <xs:element name="productoId" type="xs:int"/>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="descripcion" type="xs:string"/>
+                <xs:element name="precio" type="xs:decimal"/>
+            </xs:sequence> 
+          	<xs:attribute name="categoriaId" type="xs:int" use="required"/>
+        </xs:complexType>  
+    </xs:element>  
+    <xs:element name="modificarProductoRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="productoId" type="xs:int"/>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="descripcion" type="xs:string"/>
+                <xs:element name="precio" type="xs:decimal"/>
+            </xs:sequence>
+        </xs:complexType>
+     </xs:element>   
+     <xs:element name="modificarproductoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="respuesta" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+     </xs:element>
+     <xs:element name="borrarProductoRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="productoId" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+     </xs:element>   
+     <xs:element name="borrarProductoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="respuesta" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+     </xs:element>  
 </xs:schema>
