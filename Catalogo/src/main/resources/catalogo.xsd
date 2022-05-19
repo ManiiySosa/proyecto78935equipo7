@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://tis.uv.mx/Catalogo"
+           xmlns:tns="http://tis.uv.mx/Catalogo"
+           elementFormDefault="qualified">
+    <xs:element name="agregarCategoriaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="categoriaId" type="xs:int"/>
+                <xs:element name="nombre" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="agregarCategoriaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="respuesta" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
