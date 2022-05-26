@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2022.05.25 a las 07:28:02 PM CDT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="https://tis.uv.mx/catalogo">
+    <schemaBindings map="false">
+      <package name="https.tis_uv_mx.catalogo"/>
+    </schemaBindings>
+    <bindings scd="tns:listarCategoriasResponse">
+      <class ref="https.tis_uv_mx.catalogo.ListarCategoriasResponse"/>
+    </bindings>
+    <bindings scd="tns:buscarProductosResponse">
+      <class ref="https.tis_uv_mx.catalogo.BuscarProductosResponse"/>
+    </bindings>
+    <bindings scd="tns:buscarProductosCategoriaResponse">
+      <class ref="https.tis_uv_mx.catalogo.BuscarProductosCategoriaResponse"/>
+    </bindings>
+    <bindings scd="tns:agregarCategoriaRequest">
+      <class ref="https.tis_uv_mx.catalogo.AgregarCategoriaRequest"/>
+    </bindings>
+    <bindings scd="tns:agregarCategoriaResponse">
+      <class ref="https.tis_uv_mx.catalogo.AgregarCategoriaResponse"/>
+    </bindings>
+    <bindings scd="tns:agregarProductoRequest">
+      <class ref="https.tis_uv_mx.catalogo.AgregarProductoRequest"/>
+    </bindings>
+    <bindings scd="tns:agregarProductoResponse">
+      <class ref="https.tis_uv_mx.catalogo.AgregarProductoResponse"/>
+    </bindings>
+    <bindings scd="tns:buscarProductosCategoriaRequest">
+      <class ref="https.tis_uv_mx.catalogo.BuscarProductosCategoriaRequest"/>
+    </bindings>
+    <bindings scd="tns:modificarProductoRequest">
+      <class ref="https.tis_uv_mx.catalogo.ModificarProductoRequest"/>
+    </bindings>
+    <bindings scd="tns:modificarproductoResponse">
+      <class ref="https.tis_uv_mx.catalogo.ModificarproductoResponse"/>
+    </bindings>
+    <bindings scd="tns:borrarProductoRequest">
+      <class ref="https.tis_uv_mx.catalogo.BorrarProductoRequest"/>
+    </bindings>
+    <bindings scd="tns:borrarProductoResponse">
+      <class ref="https.tis_uv_mx.catalogo.BorrarProductoResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+
