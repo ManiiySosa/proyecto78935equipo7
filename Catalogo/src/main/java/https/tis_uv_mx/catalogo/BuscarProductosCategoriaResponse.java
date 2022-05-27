@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
 // Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2022.05.25 a las 07:28:02 PM CDT 
+// Generado el: 2022.05.26 a las 11:23:44 AM CDT 
 //
 
 
@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
@@ -38,7 +37,6 @@ import javax.xml.bind.annotation.XmlType;
  *                   &lt;element name="descripcion" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *                   &lt;element name="precio" type="{http://www.w3.org/2001/XMLSchema}double"/&gt;
  *                 &lt;/sequence&gt;
- *                 &lt;attribute name="categoria" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *               &lt;/restriction&gt;
  *             &lt;/complexContent&gt;
  *           &lt;/complexType&gt;
@@ -106,7 +104,6 @@ public class BuscarProductosCategoriaResponse {
      *         &lt;element name="descripcion" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
      *         &lt;element name="precio" type="{http://www.w3.org/2001/XMLSchema}double"/&gt;
      *       &lt;/sequence&gt;
-     *       &lt;attribute name="categoria" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
      *     &lt;/restriction&gt;
      *   &lt;/complexContent&gt;
      * &lt;/complexType&gt;
@@ -129,8 +126,6 @@ public class BuscarProductosCategoriaResponse {
         @XmlElement(required = true)
         protected String descripcion;
         protected double precio;
-        @XmlAttribute(name = "categoria", required = true)
-        protected String categoria;
 
         /**
          * Obtiene el valor de la propiedad productoId.
@@ -210,30 +205,6 @@ public class BuscarProductosCategoriaResponse {
          */
         public void setPrecio(double value) {
             this.precio = value;
-        }
-
-        /**
-         * Obtiene el valor de la propiedad categoria.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getCategoria() {
-            return categoria;
-        }
-
-        /**
-         * Define el valor de la propiedad categoria.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setCategoria(String value) {
-            this.categoria = value;
         }
 
     }

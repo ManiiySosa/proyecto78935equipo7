@@ -87,7 +87,6 @@
                             <xs:element name="descripcion" type="xs:string"/>
                             <xs:element name="precio" type="xs:double"/>
                         </xs:sequence> 
-                         <xs:attribute name="categoria" type="xs:string" use="required"/>
                     </xs:complexType> 
                  </xs:element>
              </xs:sequence>
