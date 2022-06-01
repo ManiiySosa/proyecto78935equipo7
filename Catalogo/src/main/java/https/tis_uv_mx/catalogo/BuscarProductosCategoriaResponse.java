@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
 // Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2022.05.26 a las 11:23:44 AM CDT 
+// Generado el: 2022.06.01 a las 02:30:46 AM CDT 
 //
 
 
@@ -32,6 +32,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent&gt;
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *                 &lt;sequence&gt;
+ *                   &lt;element name="categoria" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *                   &lt;element name="productoId" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *                   &lt;element name="nombre" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *                   &lt;element name="descripcion" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
@@ -99,6 +100,7 @@ public class BuscarProductosCategoriaResponse {
      *   &lt;complexContent&gt;
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
      *       &lt;sequence&gt;
+     *         &lt;element name="categoria" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
      *         &lt;element name="productoId" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
      *         &lt;element name="nombre" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
      *         &lt;element name="descripcion" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
@@ -113,6 +115,7 @@ public class BuscarProductosCategoriaResponse {
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
+        "categoria",
         "productoId",
         "nombre",
         "descripcion",
@@ -120,12 +123,38 @@ public class BuscarProductosCategoriaResponse {
     })
     public static class ProductosCategoria {
 
+        @XmlElement(required = true)
+        protected String categoria;
         protected int productoId;
         @XmlElement(required = true)
         protected String nombre;
         @XmlElement(required = true)
         protected String descripcion;
         protected double precio;
+
+        /**
+         * Obtiene el valor de la propiedad categoria.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getCategoria() {
+            return categoria;
+        }
+
+        /**
+         * Define el valor de la propiedad categoria.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setCategoria(String value) {
+            this.categoria = value;
+        }
 
         /**
          * Obtiene el valor de la propiedad productoId.

@@ -125,7 +125,7 @@ public class CatalogoEndPoint {
         return res;
     }
 
-    /*@PayloadRoot(localPart = "buscarProductosCategoriaRequest", namespace = "https://tis.uv.mx/catalogo")
+    @PayloadRoot(localPart = "buscarProductosCategoriaRequest", namespace = "https://tis.uv.mx/catalogo")
     @ResponsePayload    
     public BuscarProductosCategoriaResponse buscarProductosCategoria(@RequestPayload BuscarProductosCategoriaRequest peticion){
         BuscarProductosCategoriaResponse res = new BuscarProductosCategoriaResponse();
@@ -133,15 +133,19 @@ public class CatalogoEndPoint {
         Iterable<Producto> lc = ip.findAll();
         for(Producto o : lc){
             BuscarProductosCategoriaResponse.ProductosCategoria proCat = new BuscarProductosCategoriaResponse.ProductosCategoria();
-            int opt = ic.findById(o.getCategoriaId());
-            if(opt == peticion.getCategoriaId()){
-
+            Optional<Categoria> opt = ic.findById(peticion.getCategoriaId());
+            if(o.getCategoriaId() == opt.get().getId()){
+                proCat.setCategoria(opt.get().getNombre());
+                proCat.setProductoId(o.getId());
+                proCat.setNombre(o.getNombre());
+                proCat.setDescripcion(o.getDescripcion());
+                proCat.setPrecio(o.getPrecio());
+                res.getProductosCategoria().add(proCat);
             }
         }
-
         return res;
 
     }
-    */
+    
 }
 
