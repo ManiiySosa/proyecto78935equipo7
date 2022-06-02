@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           targetNamespace="https://tis.uv.mx/carrito" 
+           xmlns:tns="https://tis.uv.mx/carrito" 
+           elementFormDefault="qualified">
+	<xs:element name="añadirProductoCarritoRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="productoId" type="xs:int" />
+                <xs:element name="cantidad" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="añadirProductoCarritoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="respuesta" type="xs:boolean" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema> 
