@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https.mx.uv.tis.pedidos;" xmlns:tns="https.mx.uv.tis.pedidos;" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://tis.uv.mx/pedido" 
+           xmlns:tns="https://tis.uv.mx/pedido" 
+           elementFormDefault="qualified">
     <xs:element name="agregarPedidoRequest">
         <xs:complexType>
             <xs:sequence>
@@ -7,7 +10,7 @@
                 <xs:element name="usuarioId" type="xs:int" />
                 <xs:element name="direccion" type="xs:string" />
                 <xs:element name="fecha" type="xs:string" />
-                <xs:element name="total" type="xs:float" />
+                <xs:element name="total" type="xs:double" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -29,7 +32,7 @@
                             <xs:element name="usuarioId" type="xs:int" />
                             <xs:element name="direccion" type="xs:string" />
                             <xs:element name="fecha" type="xs:string" />
-                            <xs:element name="total" type="xs:float" />
+                            <xs:element name="total" type="xs:double" />
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -40,11 +43,10 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="pedidoId" type="xs:int" />
-                <xs:element name="usuarioId" type="xs:int" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    <xs:element name="borrarProductoResponse">
+    <xs:element name="borrarPedidoResponse">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="respuesta" type="xs:boolean" />
