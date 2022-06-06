@@ -2,7 +2,6 @@ https\tis_uv_mx\pedido\AgregarPedidoRequest.class
 https\tis_uv_mx\pedido\AgregarPedidoResponse.class
 https\tis_uv_mx\pedido\ListarPedidoResponse$Pedido.class
 https\tis_uv_mx\pedido\ObjectFactory.class
-mx\uv\tis\pedido\PedidoConf.class
 mx\uv\tis\pedido\Ipedido.class
 mx\uv\tis\pedido\PedidoApplication.class
 https\tis_uv_mx\pedido\ListarPedidoResponse.class
