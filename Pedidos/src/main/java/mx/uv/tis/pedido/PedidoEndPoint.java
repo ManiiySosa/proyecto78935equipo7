@@ -27,6 +27,7 @@ public class PedidoEndPoint{
         pedido.setUsuarioId(peticion.getUsuarioId());
         pedido.setDireccion(peticion.getDireccion());
         pedido.setFecha(peticion.getFecha());
+        pedido.setTotal(peticion.getTotal());
         ipedido.save(pedido);
         respuesta.setRespuesta(pedido.toString());
 
@@ -46,6 +47,7 @@ public class PedidoEndPoint{
             p.setUsuarioId(o.getUsuarioId());
             p.setDireccion(o.getDireccion());
             p.setFecha(o.getFecha());
+            p.setTotal(o.getTotal());
             res.getPedido().add(p);
         }
 
