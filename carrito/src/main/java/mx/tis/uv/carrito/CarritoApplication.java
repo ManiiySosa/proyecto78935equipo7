@@ -1,4 +1,4 @@
-package mx.uv.tis.carrito.carrito;
+package mx.tis.uv.carrito;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,8 +8,6 @@ public class CarritoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CarritoApplication.class, args);
-
-		
 	}
 
 }
