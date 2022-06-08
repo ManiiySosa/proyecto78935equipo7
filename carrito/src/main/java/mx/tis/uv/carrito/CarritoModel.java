@@ -23,12 +23,11 @@ public class CarritoModel {
         super();
     }
     
-    public CarritoModel(Integer id, String productoId, int cantidad, double precio, double total) {
+    public CarritoModel(Integer id, String productoId, int cantidad, double precio) {
         Id = id;
         this.productoId = productoId;
         this.cantidad = cantidad;
         this.precio = precio;
-        this.total = total;
     }
 
     public Integer getId() {
